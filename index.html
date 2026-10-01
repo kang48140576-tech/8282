@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더전골 - 퇴근 후 나를 위한 한 끼</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            yellow: '#FACC15', // 눈에 띄는 옐로우 톤
+                            black: '#111827',
+                            red: '#DC2626'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="bg-brand-black text-white py-4 px-6 sticky top-0 z-50 shadow-md">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-brand-yellow">
+                더전골<span class="text-brand-red">.</span>
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-bold">
+                <a href="#story" class="hover:text-brand-yellow transition">브랜드 스토리</a>
+                <a href="#lineup" class="hover:text-brand-yellow transition">메뉴 소개</a>
+                <a href="#promotion" class="hover:text-brand-yellow transition">론칭 프로모션</a>
+            </div>
+            <a href="#promotion" class="bg-brand-yellow text-brand-black px-4 py-2 rounded-full font-bold text-sm hover:bg-yellow-300 transition">
+                이벤트 보기
+            </a>
+        </div>
+    </nav>
+
+    <header class="bg-brand-black text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://placehold.co/1920x1080/111827/FACC15?text=Jeongol+Texture')] bg-cover bg-center"></div>
+        <div class="max-w-5xl mx-auto px-6 py-20 md:py-32 relative z-10 flex flex-col items-center text-center">
+            <span class="text-brand-yellow font-bold text-lg md:text-xl mb-4 tracking-widest">배달보다 가볍게, 일반 간편식보다 푸짐하게</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                오늘도 회사는 <br class="md:hidden">날 꿇게 했다.<br>
+                <span class="text-brand-yellow">그러니 전골도 끓인다.</span>
+            </h1>
+            <p class="text-gray-300 md:text-xl mb-10 max-w-2xl font-light">
+                혼자 먹는 전골도 더 제대로. <br>
+                퇴근 후 나를 위한 완벽한 한 끼, 1인 컵전골의 새로운 기준.
+            </p>
+            
+            <!-- 첨부된 메인 비주얼 이미지 활용 및 16:9 비율 적용 -->
+            <div class="w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border-4 border-brand-yellow aspect-video">
+                <img src="2.png" alt="더전골 16:9 메인 포스터" class="w-full h-full object-cover object-center" onerror="this.src='https://placehold.co/1920x1080/FACC15/111827?text=더전골+이마트24+론칭'">
+            </div>
+        </div>
+    </header>
+
+    <section id="story" class="py-20 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">지친 하루 끝, <br class="md:hidden">당신의 야식은 어땠나요?</h2>
+                <p class="text-gray-600">2030 직장인들의 흔한 저녁 고민, 이제 더전골이 해결합니다.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- 첨부된 페르소나 이미지 활용 (16:9 비율 적용) -->
+                <div class="rounded-2xl overflow-hidden shadow-lg aspect-video">
+                    <img src="페르소나.png" alt="2030 타깃 페르소나 분석" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/1920x1080/eeeeee/999999?text=Persona+Analysis'">
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-brand-red shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i class="fa-solid fa-motorcycle text-brand-red text-xl mr-3"></i>
+                            <h3 class="font-bold text-lg">비싸고 남는 배달 음식</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">최소주문금액과 배달비의 압박, 1인분으로는 너무 많아 항상 남겨서 버리게 되는 음식들.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-gray-400 shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i class="fa-solid fa-box-open text-gray-500 text-xl mr-3"></i>
+                            <h3 class="font-bold text-lg">부실하고 질리는 간편식</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">기존 편의점 간편식은 양이 부족하거나 금방 물려서 제대로 된 '한 끼' 느낌이 부족하셨죠.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-brand-yellow shadow-sm">
+                        <div class="flex items-center mb-2">
+                            <i class="fa-solid fa-sink text-brand-yellow text-xl mr-3"></i>
+                            <h3 class="font-bold text-lg">번거로운 조리와 뒤처리</h3>
+                        </div>
+                        <p class="text-gray-600 text-sm">원룸에서 냄비 꺼내서 끓이고, 냄새 배고, 설거지까지... 피곤한 퇴근 후엔 너무 귀찮은 일입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-brand-yellow text-brand-black">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-12 leading-relaxed md:leading-normal">그래서 탄생했습니다.<br>오직 나를 위한 <br class="sm:hidden"><span class="inline-block bg-brand-black text-white px-3 py-1 rounded-lg mt-2 sm:mt-0 align-middle">프리미엄 1인 전골</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-xl transform transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-brand-yellow rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">압도적인 600mL 벤티컵</h3>
+                    <p class="text-gray-600 text-sm">배달 부럽지 않은 식당급 푸짐한 건더기. 한 그릇으로 완벽하게 든든한 1인분!</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl transform transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-brand-black text-white rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">초간편 전자레인지 6분</h3>
+                    <p class="text-gray-600 text-sm">냄비도, 설거지도 필요 없습니다. 컵째로 돌리기만 하면 방구석 포차 완성.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl transform transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-brand-red text-white rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">야식 죄책감 DOWN</h3>
+                    <p class="text-gray-600 text-sm">곤약면과 곤약떡을 더해 늦은 밤 혼술 안주로도, 야식으로도 칼로리 부담을 줄였습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lineup" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-black text-brand-yellow font-bold text-sm mb-4">LINE UP</span>
+                <h2 class="text-3xl md:text-4xl font-black">취향따라 고르는 <span class="text-brand-red">더전골 3종</span></h2>
+                <p class="text-gray-600 mt-4">오늘 밤, 당신의 스트레스를 날려줄 메뉴는 무엇인가요?</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- 곱창 더전골 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
+                    <div class="relative aspect-[3/4]">
+                        <img src="곱창더전골.png" alt="곱창 더전골" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/900x1200/eeeeee/DC2626?text=곱창+더전골'">
+                        <div class="absolute top-4 right-4 bg-brand-red text-white font-bold py-1 px-3 rounded-full shadow-md">BEST</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-2xl font-black tracking-tight">곱창 더전골</h3>
+                                <span class="text-sm font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded">480g</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 text-sm leading-relaxed">고소하고 쫄깃한 소곱창과 깊고 얼큰한 사골 국물 베이스. 소주가 절로 생각나는 진한 맛.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t pt-4">
+                            <span class="text-gray-500 text-sm font-bold"><i class="fa-solid fa-store mr-1 text-brand-yellow"></i>이마트24 단독</span>
+                            <span class="text-2xl font-black text-brand-black">9,900<span class="text-lg font-bold">원</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 만두 더전골 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
+                    <div class="relative aspect-[3/4]">
+                        <img src="만두더전골.png" alt="만두 더전골" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/900x1200/eeeeee/111827?text=만두+더전골'">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-2xl font-black tracking-tight">만두 더전골</h3>
+                                <span class="text-sm font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded">470g</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 text-sm leading-relaxed">속이 꽉 찬 수제형 왕만두와 버섯·채소의 담백하고 든든한 조화. 호불호 없는 완벽한 한 끼.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t pt-4">
+                            <span class="text-gray-500 text-sm font-bold"><i class="fa-solid fa-store mr-1 text-brand-yellow"></i>이마트24 단독</span>
+                            <span class="text-2xl font-black text-brand-black">7,900<span class="text-lg font-bold">원</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 마라 더전골 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 flex flex-col">
+                    <div class="relative aspect-[3/4]">
+                        <img src="마라더전골.png" alt="마라 더전골" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/900x1200/eeeeee/D97706?text=마라+더전골'">
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-2xl font-black tracking-tight">마라 더전골</h3>
+                                <span class="text-sm font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded">460g</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 text-sm leading-relaxed">중독적인 알싸한 마라유와 푸짐한 건더기(연근, 푸주 등). 하루의 스트레스를 확 날려버릴 화끈함.</p>
+                        </div>
+                        <div class="flex justify-between items-end border-t pt-4">
+                            <span class="text-gray-500 text-sm font-bold"><i class="fa-solid fa-store mr-1 text-brand-yellow"></i>이마트24 단독</span>
+                            <span class="text-2xl font-black text-brand-black">8,900<span class="text-lg font-bold">원</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promotion" class="py-24 px-6 bg-brand-black text-white relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-yellow rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-red rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-brand-yellow mb-4">론칭 기념 특별 프로모션</h2>
+                <p class="text-gray-300 text-lg">오늘은 혼술, 다음에도 더전골!</p>
+            </div>
+
+            <!-- 첨부된 프로모션 이미지 활용 -->
+            <div class="mb-12 rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-800">
+                <img src="프로모션.jpg" alt="더전골 프로모션" class="w-full h-auto" onerror="this.src='https://placehold.co/1200x500/111827/ffffff?text=Promotion+Banner'">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 프로모션 A -->
+                <div class="bg-gray-800 p-8 rounded-3xl border border-gray-700 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full mb-4">이벤트 01. 즉시 할인</span>
+                        <h3 class="text-2xl font-black mb-2">더전골 + 소주 <span class="text-brand-yellow">동시 구매 혜택</span></h3>
+                        <p class="text-gray-400 mb-6 text-sm">완벽한 혼술 콤보! 퇴근길 이마트24에서 전골을 사면 소주가 즉시 할인됩니다.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-2xl text-center border border-gray-700">
+                        <p class="font-bold text-lg">전골 구매 시, 참이슬 등 소주</p>
+                        <p class="text-4xl font-black text-brand-yellow mt-2">500원 즉시 할인!</p>
+                    </div>
+                </div>
+
+                <!-- 프로모션 B -->
+                <div class="bg-gray-800 p-8 rounded-3xl border border-gray-700 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block bg-[#000000] border border-gray-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">이벤트 02. 재구매 쿠폰</span>
+                        <h3 class="text-2xl font-black mb-2">SSG PAY 결제 시 <span class="text-brand-yellow">30% 쿠폰</span></h3>
+                        <p class="text-gray-400 mb-6 text-sm">오늘 먹고 다음 주에도 든든하게! SSG PAY로 간편결제하면 모바일 쿠폰이 쏙.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-2xl text-center border border-gray-700 flex items-center justify-center space-x-4">
+                        <div class="text-left">
+                            <p class="font-bold text-lg">다음 더전골 구매 시 사용 가능한</p>
+                            <p class="text-4xl font-black text-brand-yellow mt-2">30% 할인 쿠폰 지급!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Customer Journey Process -->
+            <div class="mt-16 bg-brand-yellow text-brand-black p-8 rounded-3xl shadow-xl">
+                <h3 class="text-2xl font-black text-center mb-8">가장 완벽한 퇴근길 루트 🚶‍♂️</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-brand-black text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">1</div>
+                        <h4 class="font-bold mb-2">퇴근길 이마트24 방문</h4>
+                        <p class="text-sm opacity-80">눈에 띄는 옐로우 벤티컵 발견!</p>
+                        <i class="hidden md:block fa-solid fa-chevron-right absolute top-6 -right-3 text-2xl opacity-30"></i>
+                    </div>
+                    <div class="relative">
+                        <div class="w-12 h-12 bg-brand-black text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">2</div>
+                        <h4 class="font-bold mb-2">더전골+소주 번들 결제</h4>
+                        <p class="text-sm opacity-80">SSG PAY로 결제하고 할인&쿠폰 겟!</p>
+                        <i class="hidden md:block fa-solid fa-chevron-right absolute top-6 -right-3 text-2xl opacity-30"></i>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-brand-black text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4">3</div>
+                        <h4 class="font-bold mb-2">원룸 힐링 야식 타임</h4>
+                        <p class="text-sm opacity-80">전자레인지 6분 돌리고 넷플릭스 ON</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <div class="text-3xl font-black text-gray-800 mb-2">더전골<span class="text-brand-red">.</span></div>
+                <p class="text-gray-500 text-sm">혼자 먹는 전골도 더 제대로.<br>가까운 이마트24 매장에서 만나보세요.</p>
+            </div>
+            <div class="flex space-x-6 text-gray-400">
+                <a href="#" class="hover:text-brand-black transition text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-brand-black transition text-2xl"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 mt-8 text-center md:text-left text-xs text-gray-400">
+            * 본 페이지는 프로모션 기획서를 바탕으로 제작된 시안입니다.<br>
+            * 실제 판매 가격 및 행사 내용은 매장 상황에 따라 다를 수 있습니다.
+        </div>
+    </footer>
+
+</body>
+</html>
